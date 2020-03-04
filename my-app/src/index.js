@@ -33,7 +33,7 @@ class FullWidthImage extends React.Component {
         <Container className="mainpage" fluid>
 
           <Grid verticleAlign='middle'>
-          <Grid container height='600px' columns={2}>
+          <Grid container style={{height:'500px'}} columns={2} >
 
             <Grid.Row verticalAlign='middle'>
             <Grid.Column>
