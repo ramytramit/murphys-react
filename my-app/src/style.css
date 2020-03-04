@@ -9,17 +9,18 @@
 .mainpage {
   background: url("http://murphyshawaii.com/media/2014/04/murphys-front.jpg") no-repeat center fixed;
   background-size: cover;
+  width: fit-content;
   height: 600px;
   color:white !important;
 }
 
 .footer-background {
   background-color: #024131;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  padding: 5% 7%;
   color: white;
-  font-weight: inherit;
+  font-weight: 400;
 }
+
 
 .footer-background2 {
   background-color: white;

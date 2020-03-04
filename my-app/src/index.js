@@ -33,20 +33,23 @@ class FullWidthImage extends React.Component {
         <Container className="mainpage" fluid>
 
           <Grid verticleAlign='middle'>
-          <Grid container columns={2}>
+          <Grid container height='600px' columns={2}>
 
+            <Grid.Row verticalAlign='middle'>
             <Grid.Column>
-              <img src="http://murphyshawaii.com/media/2014/04/murphyshawaiilogo.png" centered/>
+              <img src="http://murphyshawaii.com/media/2014/04/murphyshawaiilogo.png" />
             </Grid.Column>
 
+
             <Grid.Column>
-              <Header as='h2' color='white'>A traditional downtown saloon and eatery located in the Honolulu Financial District, just one block off the
+              <Header as='h2' color='red'>A traditional downtown saloon and eatery located in the Honolulu Financial District, just one block off the
                 waterfront, Murphy’s has been a haven for mariners, businessmen and locals since 1891.</Header>
             </Grid.Column>
-
+            </Grid.Row>
 
           </Grid>
           </Grid>
+
         </Container>
 
     )
@@ -61,7 +64,7 @@ class FooterMenu extends React.Component {
     return (
 
         <div className='footer-background'>
-          <Grid columns={4} centered relaxed='very'>
+          <Grid columns={3} centered relaxed='very'>
 
             <Grid.Column>
               <Menu.Item>Lunch</Menu.Item>
