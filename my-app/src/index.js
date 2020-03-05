@@ -6,8 +6,6 @@ import { Container, Header, Menu, Dropdown, Icon, Image, Segment, Grid, List, La
 
 
 
-
-
 class TopMenu extends React.Component {
   render() {
     return (
@@ -15,9 +13,19 @@ class TopMenu extends React.Component {
           <Container>
             <Image src={"http://murphyshawaii.com/media/2014/04/murphyshawaii.png."}/>
             <Menu.Item fitted position="right">Home</Menu.Item>
-            <Dropdown icon="dropdown Icon" item text="About Us"/>
+            <Dropdown icon="dropdown Icon" item text="About Us">
+              <Dropdown.Menu>
+                <Dropdown.Item>Getting Here</Dropdown.Item>
+                <Dropdown.Item>Catering/Private Events</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
             <Menu.Item fitted>St. Patrick's Day</Menu.Item>
-            <Dropdown icon="dropdown Icon" item text="Menu"/>
+            <Dropdown icon="dropdown Icon" item text="Menu">
+              <Dropdown.Menu>
+                <Dropdown.Item>Lunch Menu</Dropdown.Item>
+                <Dropdown.Item>Dinner Menu</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
             <Menu.Item fitted>Bar</Menu.Item>
             <Menu.Item><Icon name="search" /></Menu.Item>
           </Container>
@@ -30,27 +38,27 @@ class TopMenu extends React.Component {
 class FullWidthImage extends React.Component {
   render() {
     return (
-        <Container className="mainpage" fluid>
+        <div className="murphys-background">
 
-          <Grid verticleAlign='middle'>
-          <Grid container style={{height:'500px'}} columns={2} >
 
-            <Grid.Row verticalAlign='middle'>
+          <Grid container verticalAlign='middle' style={{height:'600px'}}columns={2} >
+
+            <Grid.Row columns="two">
             <Grid.Column>
-              <img src="http://murphyshawaii.com/media/2014/04/murphyshawaiilogo.png" />
+              <Image src="http://murphyshawaii.com/media/2014/04/murphyshawaiilogo.png" />
             </Grid.Column>
 
 
             <Grid.Column>
-              <Header as='h2' color='red'>A traditional downtown saloon and eatery located in the Honolulu Financial District, just one block off the
+              <Header as='h2' inverted>A traditional downtown saloon and eatery located in the Honolulu Financial District, just one block off the
                 waterfront, Murphy’s has been a haven for mariners, businessmen and locals since 1891.</Header>
             </Grid.Column>
             </Grid.Row>
 
           </Grid>
-          </Grid>
 
-        </Container>
+
+        </div>
 
     )
   }
@@ -68,7 +76,7 @@ class FooterMenu extends React.Component {
 
             <Grid.Column>
               <Menu.Item>Lunch</Menu.Item>
-              <Divider />
+              <hr/>
               <List>
                 <List.Item>Monday - Friday: 11:00am - 2:30pm</List.Item>
                 <List.Item>Saturday & Sunday: Not open for lunch</List.Item>
@@ -78,7 +86,7 @@ class FooterMenu extends React.Component {
 
             <Grid.Column>
               <Menu.Item>Bar</Menu.Item>
-              <Divider fitted/>
+              <hr/>
               <List>
                 <List.Item>Monday - Friday: From 11:00am</List.Item>
                 <List.Item>Saturday & Sunday: From 4:00pm</List.Item>
@@ -87,7 +95,7 @@ class FooterMenu extends React.Component {
 
             <Grid.Column>
               <Menu.Item>Dinner</Menu.Item>
-              <Divider fitted/>
+              <hr/>
               <List>
                 <List.Item>Monday - Saturday: 5:30pm - 10:00pm.</List.Item>
                 <List.Item>Sunday: 5:00pm - 9:00pm</List.Item>

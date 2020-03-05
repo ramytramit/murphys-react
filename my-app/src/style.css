@@ -16,7 +16,7 @@
 
 .footer-background {
   background-color: #024131;
-  padding: 5% 7%;
+  padding: 6%;
   color: white;
   font-weight: 400;
 }
@@ -27,4 +27,12 @@
   padding-top: 20px;
   padding-bottom: 40px;
   color: slategrey;
+}
+
+
+.murphys-background {
+  background: url(http://murphyshawaii.com/media/2014/04/murphys-front.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 600px;
+  color: white;
 }
